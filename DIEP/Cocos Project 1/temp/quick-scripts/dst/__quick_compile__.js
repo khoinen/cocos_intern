@@ -1,6 +1,6 @@
 
 (function () {
-var scripts = [{"deps":{"./assets/Script/BackgroundController":1,"./assets/Script/CarController":2},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Script/BackgroundController.js"},{"deps":{},"path":"preview-scripts/assets/Script/CarController.js"}];
+var scripts = [{"deps":{"./assets/Script/CarController":1,"./assets/Script/BackgroundController":2},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Script/CarController.js"},{"deps":{},"path":"preview-scripts/assets/Script/BackgroundController.js"}];
 var entries = ["preview-scripts/__qc_index__.js"];
 var bundleScript = 'preview-scripts/__qc_bundle__.js';
 
