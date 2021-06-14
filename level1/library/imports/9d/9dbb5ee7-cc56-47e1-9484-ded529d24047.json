@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lupin_boom",
+    "texture": "6edcbb8a-c66a-4cf9-8848-78e3ec0f53e5",
+    "atlas": "",
+    "rect": [
+      2,
+      346,
+      1020,
+      676
+    ],
+    "offset": [
+      0,
+      -172
+    ],
+    "originalSize": [
+      1024,
+      1024
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

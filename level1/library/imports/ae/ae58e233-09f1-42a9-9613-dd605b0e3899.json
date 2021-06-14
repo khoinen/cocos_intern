@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "chimgokien",
+    "texture": "593a7031-7374-4ad2-9090-07935ccf3d00",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      85,
+      251
+    ],
+    "offset": [
+      -83.5,
+      0.5
+    ],
+    "originalSize": [
+      256,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Boncau_DEFAULT",
+    "texture": "56bdf5bb-0acf-453c-8e7b-1b846336fa6f",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      207,
+      268
+    ],
+    "offset": [
+      0.5,
+      0.5
+    ],
+    "originalSize": [
+      208,
+      269
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

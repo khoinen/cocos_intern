@@ -1,0 +1,20 @@
+
+teleport.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/spiral_1
+  rotate: false
+  xy: 2, 172
+  size: 415, 415
+  orig: 415, 415
+  offset: 0, 0
+  index: -1
+image/spiral_2
+  rotate: true
+  xy: 2, 2
+  size: 168, 192
+  orig: 168, 192
+  offset: 0, 0
+  index: -1

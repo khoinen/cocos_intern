@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "bird.atlas",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "\nbird.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nb_body\n  rotate: false\n  xy: 2, 367\n  size: 374, 138\n  orig: 374, 138\n  offset: 0, 0\n  index: -1\nb_eye\n  rotate: true\n  xy: 446, 202\n  size: 27, 32\n  orig: 29, 35\n  offset: 1, 1\n  index: -1\nb_peak\n  rotate: false\n  xy: 446, 231\n  size: 59, 41\n  orig: 61, 43\n  offset: 1, 1\n  index: -1\nwing1\n  rotate: false\n  xy: 2, 131\n  size: 172, 234\n  orig: 174, 236\n  offset: 1, 1\n  index: -1\nwing_2\n  rotate: true\n  xy: 358, 66\n  size: 206, 86\n  orig: 208, 88\n  offset: 1, 1\n  index: -1\nwing_3\n  rotate: false\n  xy: 176, 210\n  size: 180, 155\n  orig: 182, 157\n  offset: 1, 1\n  index: -1\nwing_4\n  rotate: false\n  xy: 378, 274\n  size: 122, 231\n  orig: 124, 233\n  offset: 1, 1\n  index: -1\n"
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BigFrameSelection",
+    "texture": "b3032422-ef66-47ca-a29d-8b5c4f723c7a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      997,
+      1289
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      997,
+      1289
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

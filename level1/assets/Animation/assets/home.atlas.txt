@@ -1,0 +1,27 @@
+
+home.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Lupin
+  rotate: true
+  xy: 2, 136
+  size: 338, 815
+  orig: 338, 815
+  offset: 0, 0
+  index: -1
+lightBeam
+  rotate: false
+  xy: 2, 476
+  size: 1025, 1241
+  orig: 1074, 1251
+  offset: 0, 10
+  index: -1
+lightSpot
+  rotate: false
+  xy: 2, 2
+  size: 855, 132
+  orig: 855, 132
+  offset: 0, 0
+  index: -1

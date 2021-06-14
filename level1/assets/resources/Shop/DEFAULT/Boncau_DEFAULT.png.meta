@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "56bdf5bb-0acf-453c-8e7b-1b846336fa6f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 208,
+  "height": 269,
+  "platformSettings": {},
+  "subMetas": {
+    "Boncau_DEFAULT": {
+      "ver": "1.0.4",
+      "uuid": "b92e306c-c46b-437e-94c5-5e0a0f996e6e",
+      "rawTextureUuid": "56bdf5bb-0acf-453c-8e7b-1b846336fa6f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 207,
+      "height": 268,
+      "rawWidth": 208,
+      "rawHeight": 269,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

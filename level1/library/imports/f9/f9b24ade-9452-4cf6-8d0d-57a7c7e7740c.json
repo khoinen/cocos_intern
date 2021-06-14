@@ -1,0 +1,195 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "teleport",
+  "_objFlags": 0,
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "QCSnaHMjL36vBk5NFdyxwx2YUfA",
+      "spine": "3.8.99",
+      "images": "",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "spriral_1",
+        "parent": "root",
+        "x": -472.32,
+        "y": 293.97
+      },
+      {
+        "name": "spriral_2",
+        "parent": "spriral_1"
+      },
+      {
+        "name": "bone2",
+        "parent": "spriral_2"
+      },
+      {
+        "name": "bone3",
+        "parent": "spriral_2"
+      }
+    ],
+    "slots": [
+      {
+        "name": "image/spiral_1",
+        "bone": "spriral_2"
+      },
+      {
+        "name": "image/spiral_2",
+        "bone": "bone2"
+      },
+      {
+        "name": "image/spiral_3",
+        "bone": "bone3"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "image/spiral_1": {
+            "image/spiral_1": {
+              "width": 415,
+              "height": 415
+            }
+          },
+          "image/spiral_2": {
+            "image/spiral_2": {
+              "width": 168,
+              "height": 192
+            }
+          },
+          "image/spiral_3": {
+            "image/spiral_2": {
+              "width": 168,
+              "height": 192
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "teleport": {
+        "slots": {
+          "image/spiral_1": {
+            "attachment": [
+              {
+                "name": "image/spiral_1"
+              }
+            ]
+          },
+          "image/spiral_2": {
+            "color": [
+              {
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.1667,
+                "color": "ffffffff"
+              }
+            ],
+            "attachment": [
+              {
+                "name": "image/spiral_2"
+              }
+            ]
+          },
+          "image/spiral_3": {
+            "color": [
+              {
+                "time": 0.6667,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.8333,
+                "color": "ffffffff"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0.6667,
+                "name": "image/spiral_2"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "spriral_2": {
+            "rotate": [
+              {},
+              {
+                "time": 0.3333,
+                "angle": -90
+              },
+              {
+                "time": 0.6667,
+                "angle": 180
+              },
+              {
+                "time": 1,
+                "angle": 90
+              },
+              {
+                "time": 1.3333
+              }
+            ]
+          },
+          "bone2": {
+            "scale": [
+              {
+                "x": 1.391,
+                "y": 1.391
+              },
+              {
+                "time": 1.3333,
+                "x": 0.283,
+                "y": 0.283
+              }
+            ]
+          },
+          "bone3": {
+            "rotate": [
+              {
+                "time": 0.6667,
+                "angle": -43.17
+              }
+            ],
+            "scale": [
+              {
+                "time": 0.6667,
+                "x": 1.436,
+                "y": 1.436
+              },
+              {
+                "time": 1.3333,
+                "x": 0.119,
+                "y": 0.119
+              }
+            ]
+          },
+          "spriral_1": {
+            "scale": [
+              {
+                "y": 1.48
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nteleport.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nimage/spiral_1\n  rotate: false\n  xy: 2, 172\n  size: 415, 415\n  orig: 415, 415\n  offset: 0, 0\n  index: -1\nimage/spiral_2\n  rotate: true\n  xy: 2, 2\n  size: 168, 192\n  orig: 168, 192\n  offset: 0, 0\n  index: -1\n",
+  "textures": [
+    {
+      "__uuid__": "75df7929-bdf7-40c0-aef9-3bdf7b1e96db"
+    }
+  ],
+  "textureNames": [
+    "teleport.png"
+  ],
+  "scale": 1
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "prison-3",
+    "texture": "a4338e79-460b-435e-bb96-e08bae06cf21",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1080,
+      1510
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1080,
+      1510
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

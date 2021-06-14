@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Khung_chon",
+    "texture": "c3999427-70eb-4298-b235-3b421e6e62a1",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      227,
+      221
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      227,
+      221
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

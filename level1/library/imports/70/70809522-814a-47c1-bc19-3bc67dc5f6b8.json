@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "sanho_2",
+    "texture": "950a2692-2453-4083-9b93-fec033eed555",
+    "atlas": "",
+    "rect": [
+      20,
+      10,
+      75,
+      200
+    ],
+    "offset": [
+      3,
+      -5
+    ],
+    "originalSize": [
+      109,
+      210
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "FailAnswer",
+    "texture": "f3ea0e72-20e0-4fd9-a23c-3f8098062565",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      134,
+      54
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      134,
+      54
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

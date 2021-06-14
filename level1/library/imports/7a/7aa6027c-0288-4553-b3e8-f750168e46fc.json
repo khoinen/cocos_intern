@@ -1,0 +1,17 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "bigButton.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "big_button": {
+      "__uuid__": "09e4ef83-4ce2-45bc-be4c-647b76314c57"
+    },
+    "big_frame": {
+      "__uuid__": "17ddda32-6d91-4fce-be97-7da1ecda3f4a"
+    },
+    "image_2021_05_24T04_02_49_633Z": {
+      "__uuid__": "76c0cfc6-258b-4cc2-bc2a-2b749ac0d3d1"
+    }
+  }
+}

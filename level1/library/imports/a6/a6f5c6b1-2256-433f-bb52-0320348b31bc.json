@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Sannha_DEFAULT",
+    "texture": "2da30243-0602-417c-9317-1ef2443326ea",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1051,
+      358
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1051,
+      358
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ICON_Tương",
+    "texture": "d6d43a1b-2fd7-4710-824f-3e125d6b6ddf",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      162,
+      123
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      162,
+      123
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

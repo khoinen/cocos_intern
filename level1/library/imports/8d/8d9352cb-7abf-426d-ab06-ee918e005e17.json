@@ -1,0 +1,62 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "UI.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "BGSetting": {
+      "__uuid__": "a755db5a-21a2-45e8-8d9b-c91c0a3bac72"
+    },
+    "BGSoundMusic": {
+      "__uuid__": "da5d4504-7ab6-444c-8b90-016382eb57e1"
+    },
+    "HomeIcon": {
+      "__uuid__": "319dd657-9c78-4374-a868-d38de2f9d376"
+    },
+    "MoneyIcon": {
+      "__uuid__": "97412e9b-a618-42b6-abff-51b3163c72b1"
+    },
+    "Monneypack": {
+      "__uuid__": "51dff4ac-72ed-413d-994b-71151367d94d"
+    },
+    "MusicIcon": {
+      "__uuid__": "df41392a-ff10-42a6-96f5-78fe72968fbf"
+    },
+    "NextButton": {
+      "__uuid__": "d80751f3-7c72-4468-a0ff-13d67be40172"
+    },
+    "NextLvIcon": {
+      "__uuid__": "1fa20dd8-2d15-493e-92cc-2ee24720ba16"
+    },
+    "ReplayButton": {
+      "__uuid__": "0a4db7a5-eb25-43c4-a2a2-37b923b5bf09"
+    },
+    "ReplayIcon": {
+      "__uuid__": "af105c98-58d2-4a6d-adad-83439b45d1cb"
+    },
+    "SelectLVButton": {
+      "__uuid__": "550c89b9-9b8e-4d03-a6ce-20cb30cd6b97"
+    },
+    "SelectLVButton_1": {
+      "__uuid__": "3a5ba0b4-3715-4ce7-9b9b-dbe8fc0731c6"
+    },
+    "SettingIcon": {
+      "__uuid__": "b17bd374-90ed-4fa2-8c17-3477a163e67e"
+    },
+    "SoundIcon": {
+      "__uuid__": "07bd8e9c-779f-4341-8142-25781f1be2c2"
+    },
+    "VideoIcon": {
+      "__uuid__": "3894d541-54b8-4bef-ad16-70bbc719b23b"
+    },
+    "X2Button": {
+      "__uuid__": "91e0c30a-87c4-429b-a3e6-512b0b13d0c9"
+    },
+    "but_share": {
+      "__uuid__": "cb1ec879-f8aa-47c8-93fd-a03f4e9d2c96"
+    },
+    "dot_red": {
+      "__uuid__": "c8c816f6-7641-4133-b244-df9b3d3c297c"
+    }
+  }
+}

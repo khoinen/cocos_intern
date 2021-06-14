@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Giuong_TYPE3",
+    "texture": "618ad36d-f382-4f4c-a038-644fe8ecef6a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      447,
+      457
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      447,
+      457
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

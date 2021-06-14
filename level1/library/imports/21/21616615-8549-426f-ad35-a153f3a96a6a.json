@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "dog_1.atlas",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "\ndog_1.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\ndog/body\n  rotate: false\n  xy: 2, 617\n  size: 468, 350\n  orig: 468, 350\n  offset: 0, 0\n  index: -1\ndog/chan_sau1\n  rotate: true\n  xy: 472, 765\n  size: 202, 238\n  orig: 202, 238\n  offset: 0, 0\n  index: -1\ndog/chan_sau_2\n  rotate: true\n  xy: 712, 835\n  size: 132, 255\n  orig: 132, 255\n  offset: 0, 0\n  index: -1\ndog/chan_truoc\n  rotate: false\n  xy: 901, 646\n  size: 64, 187\n  orig: 64, 187\n  offset: 0, 0\n  index: -1\ndog/chan_truoc_2\n  rotate: true\n  xy: 712, 769\n  size: 64, 187\n  orig: 64, 187\n  offset: 0, 0\n  index: -1\n"
+}

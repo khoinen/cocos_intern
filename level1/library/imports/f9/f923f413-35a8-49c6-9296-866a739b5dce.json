@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Tivi_TYPE3",
+    "texture": "4639a297-ddd3-469f-9f5a-16782b2502bd",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      329,
+      233
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      329,
+      233
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
