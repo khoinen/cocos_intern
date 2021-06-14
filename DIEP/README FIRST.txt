@@ -1,1 +1,0 @@
-Download zip file and import folder "Cocos Project 1" to Cocos Creator to run.
