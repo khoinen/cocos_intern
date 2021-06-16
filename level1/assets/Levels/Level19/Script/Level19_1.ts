@@ -104,7 +104,7 @@ export default class Level19_1 extends LevelBase {
                                     this.lupin.setCompleteListener(null);
                                     tween(this.lupin.node).by(2, {position: cc.v3(0, -500)}, {easing: "cubicOut"})
                                         .call(() => {
-                                            this.showFail(this.selected);
+                                            this.showFail();
                                         }).start();
                                 }
                             })
@@ -140,7 +140,7 @@ export default class Level19_1 extends LevelBase {
                     .call(() => {
                         tween(this.lupin.node).to(0.2, {position: cc.v3(765, -1560)})
                             .call(() => {
-                                this.showFail(this.selected);
+                                this.showFail();
                             })
                             .start();
                     })

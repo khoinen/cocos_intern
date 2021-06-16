@@ -65,8 +65,8 @@ export default class LevelBase extends cc.Component {
     @property([cc.SpriteFrame])
     iconOption: cc.SpriteFrame[] = [];
 
-    @property(cc.Prefab)
-    next: cc.Prefab = null;
+    @property(cc.Node)
+    next: cc.Node = null;
 
     @property(cc.Prefab)
     fishSwim: cc.Prefab = null;
@@ -275,12 +275,6 @@ export default class LevelBase extends cc.Component {
             {
                 scene.active = true;
             }
-            else
-            {
-                scene = cc.instantiate(this.next);
-                this.node.parent.addChild(scene);
-            }
-            
         }
     }
 
@@ -438,9 +432,7 @@ export default class LevelBase extends cc.Component {
         optionContainer.active = isShow;
     }
 
-    showFail(option: number): void {
-        GameManager.logFailed(this.levelCurrent, this.stageCurrent, option)
-        // GameManager.logEvent(`Failed L${this.levelCurrent + 1} S${this.stageCurrent + 1}-${option + 1}`)
+    showFail(): void {
         cc.audioEngine.stopAllEffects()
         tween(this.node).call(() => {
                             this.lupin.timeScale = 0;
@@ -448,7 +440,7 @@ export default class LevelBase extends cc.Component {
                             {
                                 spine.timeScale = 0;
                             }
-                            EffectManager.showX(option, this.getLineCurrent());
+                            EffectManager.showX(this.selected, this.getLineCurrent());
                         })
                         .delay(1)
                         .call(() => {
@@ -470,12 +462,10 @@ export default class LevelBase extends cc.Component {
                         }).start();
     }
 
-    showSuccess(option: number): void {
-        GameManager.logPassed(this.levelCurrent, this.stageCurrent, option)
-        // GameManager.logEvent(`Passed L${this.levelCurrent + 1}`)
+    showSuccess(): void {
         cc.audioEngine.stopAllEffects()
         tween(this.node).call(() => {
-                        EffectManager.showTick(option, this.getLineCurrent());
+                        EffectManager.showTick(this.selected, this.getLineCurrent());
                     })
                     .delay(1)
                     .call(() => {
