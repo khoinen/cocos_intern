@@ -185,7 +185,7 @@ export default class Level19_3 extends LevelBase {
                                 .to(1, {position: cc.v3(465, -385)})
                                 .delay(0.5)
                                 .call(() => {
-                                    this.showSuccess(this.selected);
+                                    this.showSuccess();
                                 })
                                 .start();
                         }
