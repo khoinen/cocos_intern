@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "shark_2.atlas",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "\nshark_2.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nSmoke\n  rotate: false\n  xy: 782, 806\n  size: 95, 93\n  orig: 111, 111\n  offset: 7, 8\n  index: -1\nangry\n  rotate: false\n  xy: 879, 864\n  size: 38, 35\n  orig: 38, 35\n  offset: 0, 0\n  index: -1\nmini_shark\n  rotate: false\n  xy: 595, 800\n  size: 185, 99\n  orig: 185, 99\n  offset: 0, 0\n  index: -1\nshark_1\n  rotate: false\n  xy: 2, 774\n  size: 591, 245\n  orig: 591, 245\n  offset: 0, 0\n  index: -1\nshark_2\n  rotate: false\n  xy: 595, 901\n  size: 211, 118\n  orig: 211, 118\n  offset: 0, 0\n  index: -1\nshark_3\n  rotate: false\n  xy: 808, 901\n  size: 211, 118\n  orig: 211, 118\n  offset: 0, 0\n  index: -1\n"
-}

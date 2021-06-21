@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "crocodile_1.atlas",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "\ncrocodile_1.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nbody\n  rotate: false\n  xy: 2, 183\n  size: 321, 107\n  orig: 321, 107\n  offset: 0, 0\n  index: -1\nhead\n  rotate: false\n  xy: 148, 320\n  size: 111, 63\n  orig: 111, 63\n  offset: 0, 0\n  index: -1\ntail_1\n  rotate: false\n  xy: 2, 328\n  size: 144, 55\n  orig: 144, 55\n  offset: 0, 0\n  index: -1\ntail_2\n  rotate: true\n  xy: 261, 292\n  size: 91, 122\n  orig: 91, 123\n  offset: 0, 0\n  index: -1\n"
-}

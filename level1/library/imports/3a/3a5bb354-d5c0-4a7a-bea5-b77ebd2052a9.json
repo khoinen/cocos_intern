@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "spider.atlas",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "\nspider.png\nsize: 256,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nbody\n  rotate: false\n  xy: 2, 156\n  size: 203, 98\n  orig: 203, 98\n  offset: 0, 0\n  index: -1\neye_1\n  rotate: false\n  xy: 82, 8\n  size: 22, 19\n  orig: 22, 19\n  offset: 0, 0\n  index: -1\neye_2\n  rotate: false\n  xy: 139, 49\n  size: 29, 22\n  orig: 29, 23\n  offset: 0, 1\n  index: -1\nleg_b_1\n  rotate: false\n  xy: 197, 59\n  size: 49, 49\n  orig: 49, 49\n  offset: 0, 0\n  index: -1\nleg_b_2\n  rotate: false\n  xy: 192, 110\n  size: 35, 44\n  orig: 35, 44\n  offset: 0, 0\n  index: -1\nleg_b_3\n  rotate: false\n  xy: 82, 29\n  size: 27, 37\n  orig: 27, 38\n  offset: 0, 0\n  index: -1\nleg_b_4\n  rotate: true\n  xy: 2, 2\n  size: 64, 78\n  orig: 64, 78\n  offset: 0, 0\n  index: -1\nleg_f_1\n  rotate: false\n  xy: 207, 163\n  size: 40, 91\n  orig: 40, 91\n  offset: 0, 0\n  index: -1\nleg_f_2\n  rotate: true\n  xy: 88, 73\n  size: 34, 107\n  orig: 34, 107\n  offset: 0, 0\n  index: -1\nleg_f_3\n  rotate: true\n  xy: 88, 109\n  size: 45, 102\n  orig: 45, 102\n  offset: 0, 0\n  index: -1\nleg_f_4\n  rotate: false\n  xy: 2, 68\n  size: 84, 86\n  orig: 84, 86\n  offset: 0, 0\n  index: -1\nmouth_01\n  rotate: false\n  xy: 111, 39\n  size: 26, 32\n  orig: 26, 33\n  offset: 0, 1\n  index: -1\nmouth_02\n  rotate: true\n  xy: 229, 129\n  size: 32, 12\n  orig: 32, 12\n  offset: 0, 0\n  index: -1\n"
-}

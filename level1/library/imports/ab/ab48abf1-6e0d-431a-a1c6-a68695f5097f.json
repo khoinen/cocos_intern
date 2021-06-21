@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "snake.atlas",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "\nsnake.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nsnake_1\n  rotate: false\n  xy: 2, 401\n  size: 586, 516\n  orig: 586, 551\n  offset: 0, 18\n  index: -1\nsnake_die\n  rotate: false\n  xy: 2, 263\n  size: 505, 136\n  orig: 538, 180\n  offset: 16, 12\n  index: -1\nstar\n  rotate: false\n  xy: 590, 652\n  size: 327, 265\n  orig: 327, 265\n  offset: 0, 0\n  index: -1\n"
-}

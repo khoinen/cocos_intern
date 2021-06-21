@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "teleport.atlas",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "\nteleport.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nimage/spiral_1\n  rotate: false\n  xy: 2, 172\n  size: 415, 415\n  orig: 415, 415\n  offset: 0, 0\n  index: -1\nimage/spiral_2\n  rotate: true\n  xy: 2, 2\n  size: 168, 192\n  orig: 168, 192\n  offset: 0, 0\n  index: -1\n"
-}

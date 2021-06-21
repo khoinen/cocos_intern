@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "dog.atlas",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "\ndog.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\ndog/body\n  rotate: false\n  xy: 164, 74\n  size: 252, 163\n  orig: 254, 166\n  offset: 1, 2\n  index: -1\ndog/eye_l\n  rotate: true\n  xy: 13, 401\n  size: 15, 16\n  orig: 15, 16\n  offset: 0, 0\n  index: -1\ndog/eye_r\n  rotate: false\n  xy: 2, 408\n  size: 9, 8\n  orig: 9, 8\n  offset: 0, 0\n  index: -1\ndog/head\n  rotate: true\n  xy: 2, 83\n  size: 154, 160\n  orig: 156, 162\n  offset: 1, 1\n  index: -1\ndog/jaw\n  rotate: false\n  xy: 2, 284\n  size: 141, 83\n  orig: 143, 86\n  offset: 1, 2\n  index: -1\ndog/leg_b_bot\n  rotate: true\n  xy: 31, 372\n  size: 44, 56\n  orig: 51, 56\n  offset: 0, 0\n  index: -1\ndog/leg_b_top\n  rotate: true\n  xy: 195, 361\n  size: 55, 96\n  orig: 55, 97\n  offset: 0, 0\n  index: -1\ndog/leg_f_bot\n  rotate: true\n  xy: 89, 369\n  size: 47, 104\n  orig: 48, 104\n  offset: 1, 0\n  index: -1\ndog/leg_f_top\n  rotate: true\n  xy: 293, 351\n  size: 65, 103\n  orig: 66, 103\n  offset: 0, 0\n  index: -1\nprops/meat\n  rotate: false\n  xy: 145, 239\n  size: 210, 110\n  orig: 221, 148\n  offset: 6, 19\n  index: -1\n"
-}
