@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "Shark.atlas",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "\nShark.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nbody\n  rotate: false\n  xy: 2, 702\n  size: 674, 317\n  orig: 848, 330\n  offset: 0, 11\n  index: -1\neye\n  rotate: false\n  xy: 666, 582\n  size: 82, 64\n  orig: 82, 65\n  offset: 0, 1\n  index: -1\neye_1\n  rotate: false\n  xy: 750, 597\n  size: 53, 49\n  orig: 54, 50\n  offset: 0, 0\n  index: -1\neye_2\n  rotate: false\n  xy: 886, 607\n  size: 38, 38\n  orig: 38, 39\n  offset: 0, 0\n  index: -1\neye_pupil\n  rotate: true\n  xy: 805, 600\n  size: 15, 17\n  orig: 16, 17\n  offset: 1, 0\n  index: -1\nfin_left\n  rotate: true\n  xy: 895, 647\n  size: 105, 124\n  orig: 107, 127\n  offset: 1, 2\n  index: -1\nfin_right\n  rotate: false\n  xy: 559, 576\n  size: 105, 124\n  orig: 107, 127\n  offset: 1, 2\n  index: -1\nmouth\n  rotate: true\n  xy: 895, 754\n  size: 265, 122\n  orig: 294, 123\n  offset: 14, 1\n  index: -1\nmouth_1\n  rotate: true\n  xy: 678, 648\n  size: 371, 215\n  orig: 373, 215\n  offset: 2, 0\n  index: -1\nmouth_2\n  rotate: false\n  xy: 2, 486\n  size: 340, 214\n  orig: 341, 215\n  offset: 1, 1\n  index: -1\nmouth_3\n  rotate: false\n  xy: 344, 512\n  size: 213, 188\n  orig: 213, 189\n  offset: 0, 1\n  index: -1\nnoise_1\n  rotate: false\n  xy: 805, 617\n  size: 79, 29\n  orig: 80, 30\n  offset: 0, 0\n  index: -1\n"
-}

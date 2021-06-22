@@ -1,7 +1,0 @@
-{
-  "__type__": "cc.TextAsset",
-  "_name": "chimgokien.atlas",
-  "_objFlags": 0,
-  "_native": "",
-  "text": "\nchimgokien.png\nsize: 256,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nbody\n  rotate: false\n  xy: 2, 144\n  size: 74, 109\n  orig: 74, 109\n  offset: 0, 0\n  index: -1\ncanhchim\n  rotate: true\n  xy: 2, 2\n  size: 52, 70\n  orig: 52, 70\n  offset: 0, 0\n  index: -1\nhead\n  rotate: true\n  xy: 2, 56\n  size: 86, 50\n  orig: 86, 50\n  offset: 0, 0\n  index: -1\nvet_go\n  rotate: true\n  xy: 54, 107\n  size: 35, 33\n  orig: 35, 33\n  offset: 0, 0\n  index: -1\n"
-}
