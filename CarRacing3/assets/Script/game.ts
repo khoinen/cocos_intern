@@ -25,6 +25,9 @@ export default class NewClass extends cc.Component {
     @property (cc.Node)
     optionController: cc.Node = null ;
 
+    @property (cc.Node)
+    alert: cc.Node = null ;
+
 
     isStarted: boolean;
     atCrossRoad: boolean;
@@ -68,30 +71,57 @@ export default class NewClass extends cc.Component {
         this.backgroundController.children[0].y = top.position.y + (this.roadPrefab.data.height + this.backgroundController.children[0].height) / 2;
     }
 
+    moveOtherCars(){
+        this.carsController.getComponent("carsController").goLeft.start();
+        this.carsController.getComponent("carsController").goRight.start();
+        this.atCrossRoad = false;
+    }
+
     controlHandler(event){
         switch ( event.keyCode){
+
             case cc.macro.KEY.w:
-                this.player.getComponent("playerController").goStraight.start();
-                this.carsController.getComponent("carsController").goLeft.start();
-                this.carsController.getComponent("carsController").goRight.start();
-                break;
-            case cc.macro.KEY.q:
-                this.player.getComponent("playerController").turnLeft.start();
-                this.carsController.getComponent("carsController").goLeft.start();
-                this.carsController.getComponent("carsController").goRight.start();
-                break;
-            case cc.macro.KEY.e:
-                this.player.getComponent("playerController").turnRight.start();
-                this.carsController.getComponent("carsController").goLeft.start();
-                this.carsController.getComponent("carsController").goRight.start();
+                this.player.getComponent("playerController").goStraight
+                .call(() => this.onHit(false))
+                .start();
+                this.moveOtherCars();
                 break;
 
+            case cc.macro.KEY.q:
+                this.player.getComponent("playerController").turnLeft
+                .call(() => this.onHit(false))
+                .start();
+                
+                this.moveOtherCars();
+                break;
+                
+            case cc.macro.KEY.e:
+                this.player.getComponent("playerController").turnRight
+                .call(() => this.onHit(false))
+                .start();
+                this.moveOtherCars();
+                break;
+
+            default:
+                break;
         }
+
     };
+
+    onHit (isHit) {
+        if(isHit) {
+            this.player.stopAllActions();
+            this.carsController.children.forEach( element => {
+                element.stopAllActions();
+            })
+            this.alert.active = true;
+        }
+    }
 
     onLoad () {
         this.player.getComponent("playerController").game = this;
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+        this.alert.active = false;
     }
 
     start () {

@@ -22,7 +22,15 @@ export default class NewClass extends cc.Component {
     
     // LIFE-CYCLE CALLBACKS:
 
+    onCollisionEnter (other, self) {
+        console.log(self.name);
+        console.log(other.name);
+        this.game.onHit(true);
+    }
+
     onLoad () {
+        cc.director.getCollisionManager().enabled = true;
+
         this.turnLeft = cc.tween(this.node)
                         .by(4 * this.actionDuration, {y: 700}, {easing: 'sineOut'})
                         .by(this.actionDuration, {angle: 90})
