@@ -101,7 +101,15 @@ export default class NewClass extends cc.Component {
                 .start();
                 this.moveOtherCars();
                 break;
-
+            
+            case cc.macro.KEY.a:
+                this.player.getComponent("playerController").changePosLeft.start();
+                break;
+            
+            case cc.macro.KEY.d:
+                this.player.getComponent("playerController").changePosRight.start();
+                break;
+                
             default:
                 break;
         }

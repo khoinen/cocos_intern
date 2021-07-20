@@ -1,3 +1,4 @@
+
 // Learn TypeScript:
 //  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
 // Learn Attribute:
@@ -18,7 +19,8 @@ export default class NewClass extends cc.Component {
     turnLeft: cc.Tween<cc.Node> = null;
     turnRight: cc.Tween<cc.Node> = null;
     goStraight: cc.Tween<cc.Node> = null;
-
+    changePosLeft: cc.Tween<cc.Node> = null;
+    changePosRight: cc.Tween<cc.Node> = null;
     
     // LIFE-CYCLE CALLBACKS:
 
@@ -43,6 +45,15 @@ export default class NewClass extends cc.Component {
                         .by(this.actionDuration, {angle: -90})
                         .by(8 * this.actionDuration, {x: 2000}, {easing: 'sineOut'});
 
+        this.changePosLeft = cc.tween(this.node)
+                            .by(2 * this.actionDuration, {x: -350, angle: 30}, {easing: 'sineOut'})
+                            .by(this.actionDuration, {angle: -30});
+
+        this.changePosRight = cc.tween(this.node)
+                              .by(2 * this.actionDuration, {x:350, angle: -30} , {easing: 'sineOut'})
+                              .by(this.actionDuration, {angle: 30});
+
+        
     }
 
     start () {
