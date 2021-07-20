@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "crossroad",
+    "_name": "CrossRoad",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -43,8 +43,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1280,
-      "height": 1200
+      "width": 2160,
+      "height": 2280
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -55,7 +55,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
+        265.014,
         0,
         0,
         0,
@@ -119,8 +119,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        280.321,
-        135.874,
+        456.413,
+        426.967,
         0,
         0,
         0,
@@ -182,9 +182,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "d160caf3-d962-42b8-b48f-752315b97120"
+      "__id__": 0
     },
-    "fileId": "3193ZfrEdF2ZsJUDVFbgPi",
+    "fileId": "bbFq6jc5xE/awvH6BXuCxz",
     "sync": false
   },
   {
@@ -226,8 +226,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        97.533,
-        524.087,
+        272.376,
+        1008.526,
         0,
         0,
         0,
@@ -289,9 +289,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "d160caf3-d962-42b8-b48f-752315b97120"
+      "__id__": 0
     },
-    "fileId": "028fs5/MdK5YTvV9cUyhRM",
+    "fileId": "a8eUS5U3tHCY0URSYQT9DU",
     "sync": false
   },
   {
@@ -310,10 +310,10 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "77c844ca-dc6e-4cdd-a5ec-f444e2926f0a"
+      "__uuid__": "f7b18e77-e453-46f9-9eca-4dfca01568df"
     },
     "_type": 0,
-    "_sizeMode": 0,
+    "_sizeMode": 1,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -332,7 +332,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "d160caf3-d962-42b8-b48f-752315b97120"
+      "__id__": 0
     },
     "fileId": "",
     "sync": false
