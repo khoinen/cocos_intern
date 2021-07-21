@@ -56,7 +56,7 @@ export default class NewClass extends cc.Component {
                 this.carsController.getComponent("carsController").goRight.start();
                 
                 this.node.removeChild(this.instruction);
-                this.menu.active = false;
+                this.node.removeChild(this.menu);
                 this.isStarted = true;
             }
         } else if (event.keyCode === cc.macro.KEY.space) {
@@ -84,7 +84,7 @@ export default class NewClass extends cc.Component {
         .to(0.25, {scale: 0.2, opacity: 0}, {easing: 'quartInOut'})
         .call(() => {this.instruction.active = false;})
         .start();
-        
+
         this.menu.active = true;
     }
 
