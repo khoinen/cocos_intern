@@ -28,6 +28,11 @@ export default class NewClass extends cc.Component {
     @property (cc.Node)
     alert: cc.Node = null ;
 
+    @property (cc.Node)
+    instruction: cc.Node = null ;
+
+    @property (cc.Node)
+    menu: cc.Node = null ;
 
     isStarted: boolean;
     atCrossRoad: boolean;
@@ -50,9 +55,37 @@ export default class NewClass extends cc.Component {
                 this.carsController.getComponent("carsController").goLeft.start();
                 this.carsController.getComponent("carsController").goRight.start();
                 
+                this.node.removeChild(this.instruction);
+                this.menu.active = false;
                 this.isStarted = true;
             }
+        } else if (event.keyCode === cc.macro.KEY.space) {
+            this.instruction.setPosition(0, 0);
+            if (this.instruction.active){
+                this.hideInstructions();
+            } else {
+                this.showInstructions();
+            }
         }
+    }
+
+    showInstructions() {
+        this.instruction.active = true;
+        this.instruction.opacity = 0;
+        this.instruction.scale = 0.2;
+        this.menu.active = false;
+        cc.tween(this.instruction)
+        .to(0.25, {scale: 1, opacity: 255}, {easing: 'quartInOut'})
+        .start();
+    }
+
+    hideInstructions() {
+        cc.tween(this.instruction)
+        .to(0.25, {scale: 0.2, opacity: 0}, {easing: 'quartInOut'})
+        .call(() => {this.instruction.active = false;})
+        .start();
+        
+        this.menu.active = true;
     }
 
     spawnUsingPrefabs (prefab, parent, posX, posY) {
@@ -122,6 +155,7 @@ export default class NewClass extends cc.Component {
             this.carsController.children.forEach( element => {
                 element.stopAllActions();
             })
+            this.alert.setPosition(0, 0)
             this.alert.active = true;
         }
     }
@@ -136,6 +170,7 @@ export default class NewClass extends cc.Component {
         this.spawnRoads();
         this.backgroundController.getComponent("backgroundController").loop.start();
         this.optionController.active = false;
+        this.instruction.active = false;
     }
 
     update (dt) {
