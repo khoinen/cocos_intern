@@ -13,6 +13,9 @@ export default class NewClass extends cc.Component {
 
     @property
     actionDuration: number = 0;
+
+    @property (cc.Node)
+    hitEffect: cc.Node = null;
     
     game = null;
 
@@ -27,6 +30,13 @@ export default class NewClass extends cc.Component {
     onCollisionEnter (other, self) {
         console.log(self.name);
         console.log(other.name);
+
+        let intersection = new cc.Rect();
+        self.world.aabb.intersection(intersection, other.world.aabb);
+
+        this.hitEffect.setPosition((intersection.x + intersection.width / 2) - this.game.node.x,
+                                    (intersection.y + intersection.height / 2) - this.game.node.y);
+        this.hitEffect.active = true;
         this.game.onHit(true);
     }
 
@@ -38,7 +48,7 @@ export default class NewClass extends cc.Component {
                         .by(this.actionDuration, {angle: 90})
                         .by(8 * this.actionDuration, {x: -2000}, {easing: 'sineOut'});
 
-        this.goStraight = cc.tween(this.node).by(10 * this.actionDuration, { y: 3000}, {easing: 'sineOut'});
+        this.goStraight = cc.tween(this.node).by(5 * this.actionDuration, { y: 3000}, {easing: 'sineOut'});
 
         this.turnRight = cc.tween(this.node)
                         .by(4 * this.actionDuration, {y: 400}, {easing: 'sineOut'})
