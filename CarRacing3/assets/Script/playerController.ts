@@ -44,23 +44,23 @@ export default class NewClass extends cc.Component {
         cc.director.getCollisionManager().enabled = true;
 
         this.turnLeft = cc.tween(this.node)
-                        .by(4 * this.actionDuration, {y: 700}, {easing: 'sineOut'})
+                        .by(4 * this.actionDuration, {y: 700}, {easing: 'sineIn'})
                         .by(this.actionDuration, {angle: 90})
                         .by(8 * this.actionDuration, {x: -2000}, {easing: 'sineOut'});
 
-        this.goStraight = cc.tween(this.node).by(5 * this.actionDuration, { y: 3000}, {easing: 'sineOut'});
+        this.goStraight = cc.tween(this.node).by(5 * this.actionDuration, { y: 3000}, {easing: 'sineIn'});
 
         this.turnRight = cc.tween(this.node)
-                        .by(4 * this.actionDuration, {y: 400}, {easing: 'sineOut'})
+                        .by(2 * this.actionDuration, {y: 400}, {easing: 'sineIn'})
                         .by(this.actionDuration, {angle: -90})
                         .by(8 * this.actionDuration, {x: 2000}, {easing: 'sineOut'});
 
         this.changePosLeft = cc.tween(this.node)
-                            .by(2 * this.actionDuration, {x: -350, angle: 30}, {easing: 'sineOut'})
+                            .by(this.actionDuration, {x: -250, angle: 30}, {easing: 'sineIn'})
                             .by(this.actionDuration, {angle: -30});
 
         this.changePosRight = cc.tween(this.node)
-                              .by(2 * this.actionDuration, {x:350, angle: -30} , {easing: 'sineOut'})
+                              .by(this.actionDuration, {x:250, angle: -30} , {easing: 'sineIn'})
                               .by(this.actionDuration, {angle: 30});
 
         

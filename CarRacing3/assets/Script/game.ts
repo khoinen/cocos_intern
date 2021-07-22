@@ -50,6 +50,10 @@ export default class NewClass extends cc.Component {
                     })
                     this.atCrossRoad = true;
                     this.optionController.active = true;
+
+                    this.player.removeFromParent();
+                    this.backgroundController.children[0].getChildByName("tmp_node").addChild(this.player);
+                    this.player.setPosition(160,-500);
                 })
                 .start();
                 this.carsController.getComponent("carsController").goLeft.start();
@@ -59,13 +63,23 @@ export default class NewClass extends cc.Component {
                 this.node.removeChild(this.menu);
                 this.isStarted = true;
             }
-        } else if (event.keyCode === cc.macro.KEY.space) {
-            this.instruction.setPosition(0, 0);
+        } 
+        
+        else if (event.keyCode === cc.macro.KEY.space) {
+            this.instruction.setPosition(0, 500);
             if (this.instruction.active){
                 this.hideInstructions();
             } else {
                 this.showInstructions();
             }
+        }
+
+        else if (event.keyCode === cc.macro.KEY.a) {
+            this.player.getComponent("playerController").changePosLeft.start();
+        }
+
+        else if (event.keyCode === cc.macro.KEY.d) {
+            this.player.getComponent("playerController").changePosRight.start();
         }
     }
 
@@ -136,11 +150,11 @@ export default class NewClass extends cc.Component {
                 break;
             
             case cc.macro.KEY.a:
-                this.player.getComponent("playerController").changePosLeft.start();
+                
                 break;
             
             case cc.macro.KEY.d:
-                this.player.getComponent("playerController").changePosRight.start();
+                
                 break;
                 
             default:
@@ -164,6 +178,7 @@ export default class NewClass extends cc.Component {
         this.player.getComponent("playerController").game = this;
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         this.alert.active = false;
+        this.player.y -= 75;
     }
 
     start () {
@@ -175,6 +190,7 @@ export default class NewClass extends cc.Component {
 
     update (dt) {
         if (this.atCrossRoad){
+            cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
             cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.controlHandler, this);
         } else { 
             this.optionController.active = false;
@@ -182,6 +198,6 @@ export default class NewClass extends cc.Component {
     }
 
     onDestroy () {
-        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+        
     }
 }
