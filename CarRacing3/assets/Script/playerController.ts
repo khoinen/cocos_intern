@@ -44,8 +44,8 @@ export default class NewClass extends cc.Component {
         cc.director.getCollisionManager().enabled = true;
 
         this.turnLeft = cc.tween(this.node)
-                        .by(2 * this.actionDuration, {y: 250}, {easing: 'sineIn'})
-                        .by(this.actionDuration , {x: -100, y: 200, angle: 35})
+                        .by(2 * this.actionDuration, {y: 200}, {easing: 'sineIn'})
+                        .by(this.actionDuration , {x: -100, y: 250, angle: 35})
                         .by(this.actionDuration , {x: -100, y: 250, angle: 35})
                         .by(this.actionDuration / 5, {x: -50 , angle: 20})
                         .by(8 * this.actionDuration , {x: -2000}, {easing: 'sineOut'});
