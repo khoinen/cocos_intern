@@ -34,6 +34,9 @@ export default class NewClass extends cc.Component {
     @property (cc.Node)
     menu: cc.Node = null ;
 
+    @property (cc.Node)
+    blackEffect: cc.Node = null ;
+
     isStarted: boolean;
     atCrossRoad: boolean;
     game = null;
@@ -169,8 +172,23 @@ export default class NewClass extends cc.Component {
             this.carsController.children.forEach( element => {
                 element.stopAllActions();
             })
+
             this.alert.setPosition(0, 0)
             this.alert.active = true;
+
+            this.scheduleOnce(() => {
+                cc.tween(this.blackEffect)
+                    .to(0.75, {opacity: 255})
+                    .call (() => {cc.director.loadScene("game")})
+                    .start();
+            })
+        } else {
+            this.scheduleOnce(() => {
+                cc.tween(this.blackEffect)
+                    .to(0.75, {opacity: 255})
+                    .call (() => {cc.director.loadScene("game")})
+                    .start();
+            })
         }
     }
 
@@ -186,6 +204,10 @@ export default class NewClass extends cc.Component {
         this.backgroundController.getComponent("backgroundController").loop.start();
         this.optionController.active = false;
         this.instruction.active = false;
+        this.blackEffect.setContentSize(5000, 5000);
+        cc.tween(this.blackEffect)
+            .to(0.75, {opacity: 0})
+            .start();
     }
 
     update (dt) {
