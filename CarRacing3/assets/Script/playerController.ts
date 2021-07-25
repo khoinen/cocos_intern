@@ -45,17 +45,17 @@ export default class NewClass extends cc.Component {
 
         this.turnLeft = cc.tween(this.node)
                         .by(2 * this.actionDuration, {y: 200}, {easing: 'sineIn'})
-                        .by(this.actionDuration , {x: -100, y: 250, angle: 35})
-                        .by(this.actionDuration , {x: -100, y: 250, angle: 35})
-                        .by(this.actionDuration / 5, {x: -50 , angle: 20})
+                        .by(this.actionDuration , {x: -100, y: 250, angle: 40})
+                        .by(this.actionDuration , {x: -100, y: 250, angle: 40})
+                        .by(this.actionDuration / 5, {x: -50 , angle: 10})
                         .by(8 * this.actionDuration , {x: -2000}, {easing: 'sineOut'});
 
         this.goStraight = cc.tween(this.node).by(5 * this.actionDuration, { y: 3000}, {easing: 'sineIn'});
 
         this.turnRight = cc.tween(this.node)
                         .by(this.actionDuration , {y: 150}, {easing: 'sineIn'})
-                        .by(this.actionDuration / 2 , {x: 50, y: 100, angle: -35})
-                        .by(this.actionDuration /2 , {x: 50, y: 100, angle: -35})
+                        .by(this.actionDuration / 2 , {x: 50, y: 125, angle: -35})
+                        .by(this.actionDuration /2 , {x: 50, y: 125, angle: -35})
                         .by(this.actionDuration / 5, {x: 50 , angle: -20})
                         .by(8 * this.actionDuration, {x: 2000}, {easing: 'sineOut'});
 

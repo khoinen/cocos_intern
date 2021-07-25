@@ -907,7 +907,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        600,
+        700,
         0,
         0,
         0,
@@ -1113,7 +1113,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -1600,
+        -2100,
         0,
         0,
         0,
@@ -1227,7 +1227,7 @@
     "goRightCar": {
       "__id__": 23
     },
-    "actionDuration": 6,
+    "actionDuration": 7.5,
     "_id": "16uUybFZBPrK+n8JPPvSuS"
   },
   {

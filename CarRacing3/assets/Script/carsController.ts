@@ -25,8 +25,8 @@ export default class NewClass extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.goLeft = cc.tween(this.goLeftCar).to(this.actionDuration, {x: -3000});
-        this.goRight = cc.tween(this.goRightCar).to(this.actionDuration, {x: 3000});
+        this.goLeft = cc.tween(this.goLeftCar).to(this.actionDuration, {x: -4000});
+        this.goRight = cc.tween(this.goRightCar).to(this.actionDuration, {x: 4000});
     }
 
     start () {
