@@ -221,6 +221,7 @@ export default class game extends cc.Component {
     }
 
     onDestroy () {
-        
+        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.controlHandler, this);
+        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
     }
 }
