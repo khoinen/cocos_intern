@@ -1,3 +1,4 @@
+
 // Learn TypeScript:
 //  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
 // Learn Attribute:
@@ -8,7 +9,7 @@
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class game extends cc.Component {
 
     @property (cc.Prefab)
     roadPrefab: cc.Prefab = null;

@@ -9,7 +9,7 @@
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class playerController extends cc.Component {
 
     @property
     actionDuration: number = 0;

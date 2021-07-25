@@ -8,7 +8,7 @@
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class carsController extends cc.Component {
 
     @property(cc.Node)
     goLeftCar: cc.Node = null;
