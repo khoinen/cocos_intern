@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "cannon4_shoot",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.35,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "d68ac7fd-2415-4b24-bf4f-761e0b0f7c5e"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "96871c73-a2bc-48f3-b3ed-5568b8da5f78"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "b74b6e9b-cddd-4192-b7ef-3906ce0c1d31"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "81d8160c-a766-41fb-9cd5-264f047593d9"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "0d284119-c214-484f-9165-94b8ac88c463"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
