@@ -111,13 +111,58 @@ export default class NewClass extends cc.Component {
     }
 
     spawnFish() {
-        
+        let fishType = Math.trunc( Math.random() * 8.5 );
+        let fishes = null
+        switch (fishType) {
+            case 0: 
+                fishes = cc.instantiate(this.fish1);
+                break;
+            case 1: 
+                fishes = cc.instantiate(this.fish2);
+                break;
+            case 2: 
+                fishes = cc.instantiate(this.fish3);
+                break;
+            case 3:
+                fishes = cc.instantiate(this.fish4);
+                break;
+            case 4: 
+                fishes = cc.instantiate(this.fish5);
+                break;
+            case 5:
+                fishes = cc.instantiate(this.fish6);
+                break;
+            case 6: 
+                fishes = cc.instantiate(this.fish7);
+                break;
+            case 7: 
+                fishes = cc.instantiate(this.shark1);
+                break;
+            case 8: 
+                fishes = cc.instantiate(this.shark2);
+                break;
+        }
         //TODO: spawn random type of fish with random moveset
 
-        let fishes = cc.instantiate(this.shark1);
-        this.node.addChild(fishes);
-        fishes.setPosition(-300,-300);
-        fishes.angle = -30;
+        //random spawn from left or right position
+
+        let leftPoint = cc.v2(this.node.getChildByName("leftPoint").position.x, this.node.getChildByName("leftPoint").position.y + (Math.random() * 1000) -500 );
+        let rightPoint = cc.v2(this.node.getChildByName("rightPoint").position.x, this.node.getChildByName("rightPoint").position.y + (Math.random() * 1000) -500 );
+
+        let flag = Math.random() * 2;
+        console.log(flag);
+        if (flag > 1) {
+            //from left to right
+            this.node.addChild(fishes);
+            fishes.setPosition(leftPoint.x, leftPoint.y);
+            fishes.angle = -30;
+            cc.tween(fishes).to(25, {position: rightPoint}, {easing: 'sineOut' }).call(() => fishes.destroy()).start();
+        } else if (flag < 1) {
+            this.node.addChild(fishes);
+            fishes.setPosition(rightPoint.x, rightPoint.y);
+            fishes.angle = 0;
+            cc.tween(fishes).to(25, {position: leftPoint}, {easing: 'sineOut' }).call(() => fishes.destroy()).start();
+        }
     }
 
     updateCoinsWhenShoot() {
@@ -136,7 +181,7 @@ export default class NewClass extends cc.Component {
         // cc.director.getCollisionManager().enabledDebugDraw = true;
         // cc.director.getCollisionManager().enabledDrawBoundingBox = true;
         this.node.on('touchstart', this.spawnBullets, this);
-        this.spawnFish()
+        this.schedule(() => this.spawnFish(), 1, cc.macro.REPEAT_FOREVER, 2);
     }
 
     start () {

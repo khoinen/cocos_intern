@@ -37,7 +37,7 @@ export default class NewClass extends cc.Component {
     @property(cc.Prefab)
     web7 : cc.Prefab = null;
 
-    isCatched:boolean = false;
+    isCaptured: boolean = false;
 
     minusHP: number = 0;
 
@@ -56,16 +56,17 @@ export default class NewClass extends cc.Component {
         this.hp = this.hp - minus;
         console.log(this.hp);
         if (this.hp <= 0) {
-            this.isCatched = true;
+            this.isCaptured = true;
         }
-        if (this.isCatched){
+        if (this.isCaptured){
             let anim = this.node.getComponent(cc.Animation);
             anim.stop();
             setTimeout(() => {
+                this.node.pauseAllActions();
                 this.node.getChildByName("scoreEffect").active = true;
                 this.node.getChildByName("scoreEffect").angle = -this.node.angle;
                 this.node.getChildByName("scoreEffect").getComponent(cc.Label).string = "x" + this.coinGained.toString();
-                cc.tween(this.node.getChildByName("scoreEffect")).to(0.5, {y:30}).call(() => this.node.destroy()).start();
+                cc.tween(this.node.getChildByName("scoreEffect")).to(0.5, {x: 0, y:40}).call(() => this.node.destroy()).start();
             }, 400);
             this.updateCoins();
         }
