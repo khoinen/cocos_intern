@@ -112,7 +112,8 @@ export default class NewClass extends cc.Component {
 
     spawnFish() {
         let fishType = Math.trunc( Math.random() * 8.5 );
-        let fishes = null
+        let radians = null;
+        let fishes = null;
         switch (fishType) {
             case 0: 
                 fishes = cc.instantiate(this.fish1);
@@ -155,12 +156,15 @@ export default class NewClass extends cc.Component {
             //from left to right
             this.node.addChild(fishes);
             fishes.setPosition(leftPoint.x, leftPoint.y);
-            fishes.angle = -30;
+            radians = Math.atan2(rightPoint.y - leftPoint.y, rightPoint.x - leftPoint.x);
+            fishes.angle = (radians * 180 / Math.PI);
             cc.tween(fishes).to(25, {position: rightPoint}, {easing: 'sineOut' }).call(() => fishes.destroy()).start();
         } else if (flag < 1) {
+            //from right to left
             this.node.addChild(fishes);
             fishes.setPosition(rightPoint.x, rightPoint.y);
-            fishes.angle = 0;
+            radians = Math.atan2(leftPoint.y - rightPoint.y, leftPoint.x - rightPoint.x);
+            fishes.angle = (radians * 180 / Math.PI);
             cc.tween(fishes).to(25, {position: leftPoint}, {easing: 'sineOut' }).call(() => fishes.destroy()).start();
         }
     }

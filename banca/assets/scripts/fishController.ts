@@ -96,7 +96,7 @@ export default class NewClass extends cc.Component {
         webs.setPosition(x, y);
         webs.scale = 0.3;
 
-        cc.tween(webs).to(0.3, {scale:0.6}).call(() => webs.destroy()).start();
+        cc.tween(webs).to(0.3, {scale:1}).call(() => webs.destroy()).start();
     }
 
     onCollisionEnter(other,self) {
