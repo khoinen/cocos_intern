@@ -38,6 +38,30 @@ export default class NewClass extends cc.Component {
     @property(cc.Prefab)
     fish1: cc.Prefab = null;
 
+    @property(cc.Prefab)
+    fish2: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    fish3: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    fish4: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    fish5: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    fish6: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    fish7: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    shark1: cc.Prefab = null;
+
+    @property(cc.Prefab)
+    shark2: cc.Prefab = null;
+
     @property(cc.Label)
     scores: cc.Label = null;
 
@@ -87,10 +111,13 @@ export default class NewClass extends cc.Component {
     }
 
     spawnFish() {
-        let fish_1 = cc.instantiate(this.fish1);
-        this.node.addChild(fish_1);
-        fish_1.setPosition(0,0);
-        fish_1.angle = -30;
+        
+        //TODO: spawn random type of fish with random moveset
+
+        let fishes = cc.instantiate(this.shark1);
+        this.node.addChild(fishes);
+        fishes.setPosition(-300,-300);
+        fishes.angle = -30;
     }
 
     updateCoinsWhenShoot() {

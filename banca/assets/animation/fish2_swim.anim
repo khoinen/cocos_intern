@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "fish2_swim",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.26666666666666666,
+  "sample": 60,
+  "speed": 0.6,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "97d07bfe-a18c-491c-af49-5db213f2e56f"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "8f3f3f3c-d78b-4301-b832-3b7c6387256a"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "18f7e8cf-1bb2-427b-87a7-5defdfc2759d"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "49db2120-7e50-4686-b165-28774768e0bc"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
