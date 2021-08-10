@@ -147,8 +147,8 @@ export default class NewClass extends cc.Component {
 
         //random spawn from left or right position
 
-        let leftPoint = cc.v2(this.node.getChildByName("leftPoint").position.x, this.node.getChildByName("leftPoint").position.y + (Math.random() * 1000) -500 );
-        let rightPoint = cc.v2(this.node.getChildByName("rightPoint").position.x, this.node.getChildByName("rightPoint").position.y + (Math.random() * 1000) -500 );
+        let leftPoint = cc.v2(this.node.getChildByName("leftPoint").position.x, this.node.getChildByName("leftPoint").position.y + (Math.random() * 800) - 550 );
+        let rightPoint = cc.v2(this.node.getChildByName("rightPoint").position.x, this.node.getChildByName("rightPoint").position.y + (Math.random() * 800) -550 );
 
         let flag = Math.random() * 2;
         console.log(flag);

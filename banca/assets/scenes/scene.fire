@@ -1910,8 +1910,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -900,
-        0,
+        -700,
+        300,
         0,
         0,
         0,
@@ -1968,8 +1968,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        900,
-        0,
+        700,
+        300,
         0,
         0,
         0,
