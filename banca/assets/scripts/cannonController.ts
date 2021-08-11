@@ -58,6 +58,11 @@ export default class NewClass extends cc.Component {
             element.active = false ;
         })
         this.node.children[this.cannonPower-1].active = true
+        let bulletNumbers = this.node.parent.getChildByName("bulletNumbers");
+        bulletNumbers.children.forEach(element =>{
+            element.active = false ;
+        })
+        bulletNumbers.children[this.cannonPower - 1].active = true
     }
 
     onLoad () {

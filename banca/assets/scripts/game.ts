@@ -107,7 +107,7 @@ export default class NewClass extends cc.Component {
         let anim = this.node.getChildByName("cannon").children[curPower].getComponent(cc.Animation);
         anim.play();
 
-        this.updateCoinsWhenShoot();
+        this.updateRemainingBullets();
     }
 
     spawnFish() {
@@ -147,8 +147,8 @@ export default class NewClass extends cc.Component {
 
         //random spawn from left or right position
 
-        let leftPoint = cc.v2(this.node.getChildByName("leftPoint").position.x, this.node.getChildByName("leftPoint").position.y + (Math.random() * 800) - 550 );
-        let rightPoint = cc.v2(this.node.getChildByName("rightPoint").position.x, this.node.getChildByName("rightPoint").position.y + (Math.random() * 800) -550 );
+        let leftPoint = cc.v2(this.node.getChildByName("leftPoint").position.x, this.node.getChildByName("leftPoint").position.y + (Math.random() * 700) - 400 );
+        let rightPoint = cc.v2(this.node.getChildByName("rightPoint").position.x, this.node.getChildByName("rightPoint").position.y + (Math.random() * 700) - 400 );
 
         let flag = Math.random() * 2;
         console.log(flag);
@@ -169,9 +169,26 @@ export default class NewClass extends cc.Component {
         }
     }
 
-    updateCoinsWhenShoot() {
+    updateRemainingBullets() {
+        let bulletNumbers = this.node.getChildByName("bulletNumbers");
+        let bulletType = this.cannon.getComponent("cannonController").cannonPower;
+        let bullet = parseInt(bulletNumbers.children[bulletType - 1].children[0].getComponent(cc.Label).string);
+        bullet -= 1;
+        if (bullet < 0) {
+            bullet = 5;
+            this.updateCoins();
+        }
+        bulletNumbers.children[bulletType - 1].children[0].getComponent(cc.Label).string = bullet.toString();
+    }
+
+    updateCoins() {
         let temp = parseInt(this.scores.string.replace(/ /g, ""));
-        temp -= this.cannon.getComponent("cannonController").cannonPower;
+        temp -= this.cannon.getComponent("cannonController").cannonPower * 15;
+        let scoreMinus = this.node.getChildByName("scoreMinus");
+        scoreMinus.getComponent(cc.Label).string = "-" + (this.cannon.getComponent("cannonController").cannonPower * 15).toString();
+        scoreMinus.active = true;
+        cc.tween(scoreMinus).by(0.3, {y:30}).call(() => {scoreMinus.active = false}).start();
+        scoreMinus.setPosition(-350,-260);
         let score = "";
         for (let i = 0; i < 6; i++){
             score = (temp % 10).toString() + score;

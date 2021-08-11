@@ -66,8 +66,8 @@ export default class NewClass extends cc.Component {
                 this.node.getChildByName("scoreEffect").active = true;
                 this.node.getChildByName("scoreEffect").angle = -this.node.angle;
                 this.node.getChildByName("scoreEffect").getComponent(cc.Label).string = "x" + this.coinGained.toString();
-                cc.tween(this.node.getChildByName("scoreEffect")).to(0.5, {x: 0, y:40}).call(() => this.node.destroy()).start();
-            }, 400);
+                cc.tween(this.node.getChildByName("scoreEffect")).to(0.3, {x: 0, y:40}).call(() => this.node.destroy()).start();
+            }, 100);
             this.updateCoins();
         }
     }
