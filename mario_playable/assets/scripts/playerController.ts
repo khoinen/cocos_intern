@@ -31,6 +31,9 @@ export default class NewClass extends cc.Component {
     @property(cc.Node)
     jumpButton: cc.Node = null;
 
+    @property(cc.Node)
+    download: cc.Node = null;
+
     isGameover:boolean = false;
     rigidBody: cc.RigidBody;
     direction: number;
@@ -175,6 +178,8 @@ export default class NewClass extends cc.Component {
             cc.tween(this.layer).to(0.5, {opacity: 120}).start();
             this.redirect.setPosition(this.camera.position);
             cc.tween(this.redirect).to(0.3, {scale:1}).start();
+            this.download.active = true;
+            this.download.setPosition(this.camera.position.x, this.camera.position.y - 200);
         }, 0.3)
         
     }
