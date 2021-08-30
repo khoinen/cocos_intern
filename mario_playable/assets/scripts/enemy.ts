@@ -27,6 +27,8 @@ export default class NewClass extends cc.Component {
             .call(() => this.node.scaleX = 1.5)
         )
         .start();
+        cc.director.getCollisionManager().enabled = true;
+        cc.director.getCollisionManager().enabledDrawBoundingBox = true;
     }
 
     onBeginContact (contact, selfCollider, otherCollider) {
@@ -34,8 +36,6 @@ export default class NewClass extends cc.Component {
             this.node.getComponent(cc.Animation).play("enemy_die");
             cc.audioEngine.playEffect(this.enemyKill, false);
             this.scheduleOnce(() => this.node.destroy(), 0.1);
-        } else {
-            otherCollider.node.getComponent("playerController").gameOver(false);
         }
     }
 

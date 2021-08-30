@@ -10,6 +10,8 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class NewClass extends cc.Component {
 
+    @property(cc.Node)
+    download: cc.Node = null;
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -31,7 +33,19 @@ export default class NewClass extends cc.Component {
         }
     }
     
+    gameEnd() {
+        window.gameEnd && window.gameEnd();
+    }
+
+    downloadClicked() {
+        window.openStore();
+    }
+
     onLoad() {
+        window.gameReady && window.gameReady();
+        if (window.mintegral){
+            this.download.active = true;
+        }
         this.makeResponsive();
     }
 

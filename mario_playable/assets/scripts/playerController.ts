@@ -61,10 +61,6 @@ export default class NewClass extends cc.Component {
         this.onGround = false;
     }
 
-    continue() { 
-        cc.director.loadScene("game");
-    }
-    
     onKeyDown (event) {
         switch(event.keyCode) {
             case cc.macro.KEY.a:
@@ -131,13 +127,14 @@ export default class NewClass extends cc.Component {
             this.gameOver(false);
         }
         else if (other.tag === 2) {
+            other.node.stopAllActions();
             this.gameOver(true);
         }
     }
 
     playerWalk() {
         if (this.onGround){
-            this.node.getComponent(cc.Animation).play("player_walk");
+            // this.node.getComponent(cc.Animation).play("player_walk");
         }
         
         this.node.scaleX = this.direction;
@@ -152,18 +149,25 @@ export default class NewClass extends cc.Component {
     }
 
     gameOver(type) {
-        this.isGameover = true;
-        this.node.removeComponent(cc.RigidBody);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.leftButton.off("touchstart", this.onLeftButtonClick, this);
         this.rightButton.off("touchstart", this.onRightButtonClick, this);
         this.jumpButton.off("touchstart", this.onJumpButtonClick, this);
 
+        this.isGameover = true;
+        this.node.stopAllActions();
+        this.rigidBody.type = cc.RigidBodyType.Static;
+
         if (type) {
             this.node.getComponent(cc.Animation).play("player_jump");
+            this.redirect.getChildByName("game-over").active = false;
+            this.redirect.getChildByName("win").active = true;
         }
-        else this.node.getComponent(cc.Animation).play("player_die");
+        else {
+            this.node.getComponent(cc.Animation).play("player_die");
+            
+        }
         this.buttonGroup.active = false;
         this.scheduleOnce(() => {
             this.layer.setPosition(this.camera.position);
@@ -171,9 +175,10 @@ export default class NewClass extends cc.Component {
             cc.tween(this.layer).to(0.5, {opacity: 120}).start();
             this.redirect.setPosition(this.camera.position);
             cc.tween(this.redirect).to(0.3, {scale:1}).start();
-        }, 0.1)
+        }, 0.3)
         
     }
+
 
     start () {
 
