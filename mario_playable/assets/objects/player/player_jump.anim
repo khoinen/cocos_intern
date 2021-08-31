@@ -3,7 +3,7 @@
   "_name": "player_jump",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 0.5166666666666667,
+  "_duration": 0.016666666666666666,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -14,13 +14,7 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "85c93649-fd87-4154-a161-2c3b0a931f65"
-            }
-          },
-          {
-            "frame": 0.5,
-            "value": {
-              "__uuid__": "85c93649-fd87-4154-a161-2c3b0a931f65"
+              "__uuid__": "c3f7ae05-876b-4112-86d6-d8098e1ccfc4"
             }
           }
         ]

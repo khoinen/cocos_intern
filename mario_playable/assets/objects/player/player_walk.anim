@@ -3,7 +3,7 @@
   "_name": "player_walk",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 0.016666666666666666,
+  "_duration": 0.6,
   "sample": 60,
   "speed": 1,
   "wrapMode": 2,
@@ -15,6 +15,48 @@
             "frame": 0,
             "value": {
               "__uuid__": "8875d201-633f-4961-8b34-a431f177da81"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "65087f57-0312-4dc4-96ba-805f68d19983"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "25396b4e-92f6-45d4-8b23-6854a983500b"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "a355be35-8a2c-42dd-893d-7c2f9f322bf2"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "4f431ad6-dd3e-47dd-9c83-056ec3c9b643"
+            }
+          },
+          {
+            "frame": 0.4166666666666667,
+            "value": {
+              "__uuid__": "c20bcb41-f9e2-4eb4-a789-1bcefef4d75c"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "7dd90141-b225-4943-9cc9-98ed324cad8c"
+            }
+          },
+          {
+            "frame": 0.5833333333333334,
+            "value": {
+              "__uuid__": "e7b59c8d-92de-461b-9484-edcd3eb1e79c"
             }
           }
         ]

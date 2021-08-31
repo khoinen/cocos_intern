@@ -10,16 +10,15 @@
             return /android|Android/i.test(e) ? "android" : /iPad|iPhone|iPod|Macintosh/.test(e) && !window.MSStream ? "iOS" : "android";
 		}
    			
-   		var clickTag = "https://play.google.com/store/apps/details?id=com.cscmobi.merge.plant";
+   		var clickTag = "https://play.google.com/store/apps/details?id=bounce.superbros.adventure.world";
    		if (getMobileOS()=="iOS"){
-   			clickTag = "https://apps.apple.com/app/id1529057280";
+   			clickTag = "https://apps.apple.com/app/id1572248833";
    		}
    		window.failedIndex = 0; 
 
 		window.openStore = function() {
 			mraid.open(clickTag);
 		}
-		window.playsound = true;
 	</script>  
 	  <script type="text/javascript">
 	// Wait for the SDK to become ready 
@@ -44,5 +43,6 @@
 	function showMyAd(){
 		startGame();
 	}
+	window.playsound = true;
 
 </script>

@@ -1,4 +1,4 @@
-st     <script type="text/javascript"src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"> </script>
+     <script type="text/javascript"src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"> </script>
 	<script>
 		/**
 		 * Determine the mobile operating system.
@@ -13,12 +13,13 @@ st     <script type="text/javascript"src="https://tpc.googlesyndication.com/page
    			
    		var clickTag = "https://play.google.com/store/apps/details?id=bounce.superbros.adventure.world";
    		if (getMobileOS()=="iOS"){
-   			clickTag = "https://apps.apple.com/app/id1529057280";
+   			clickTag = "https://apps.apple.com/app/id1572248833";
    		}
    		window.failedIndex = 0; 
-        window.playsound = false;
+
 		window.openStore = function() {
 			ExitApi.exit(clickTag);
 		}
+		window.playsound = false;
 
 	</script>  

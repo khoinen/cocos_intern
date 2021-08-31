@@ -142,7 +142,7 @@ def integrate(projectRootPath):
     htmlStr = htmlStr.replace(resMapMatchKey, resStr, 1)
     writeToPath(newHtmlPath, htmlStr)
     for js in additonjs:
-        writeNetHtml(js, htmlStr, "Mergeplants_playable.html")
+        writeNetHtml(js, htmlStr, "tony.html")
 
     targetFileSize = os.path.getsize(newHtmlPath)
     targetFileSizeInMegabyte = math.ceil(targetFileSize * 1000 / (1024 * 1024)) / 1000

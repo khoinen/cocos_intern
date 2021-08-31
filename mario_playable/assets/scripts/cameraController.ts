@@ -16,6 +16,9 @@ export default class NewClass extends cc.Component {
     @property(cc.Node)
     buttonGroupNode: cc.Node = null;
 
+    @property (cc.Node)
+    layer2: cc.Node = null;
+
     // LIFE-CYCLE CALLBACKS:
 
     update (dt) {
@@ -26,5 +29,6 @@ export default class NewClass extends cc.Component {
         currentPos.x = cc.misc.clampf(targetPos.x, 0, 5500);
         this.node.setPosition(currentPos);
         this.buttonGroupNode.setPosition(currentPos);
+        this.layer2.setPosition(currentPos.x, 480);
     }
 }

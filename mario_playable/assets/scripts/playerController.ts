@@ -34,6 +34,9 @@ export default class NewClass extends cc.Component {
     @property(cc.Node)
     download: cc.Node = null;
 
+    @property(cc.Node)
+    layer2: cc.Node = null;
+
     isGameover:boolean = false;
     rigidBody: cc.RigidBody;
     direction: number;
@@ -57,10 +60,11 @@ export default class NewClass extends cc.Component {
 
         this.rigidBody = this.node.getComponent(cc.RigidBody);
         this.redirect.scale = 0.2
+        this.layer2.scale = 50
         this.direction = 0;
         this.velocity = 400;
         this.walkForce = 20000;
-        this.jumpForce = 900000;
+        this.jumpForce = 1200000;
         this.onGround = false;
     }
 
@@ -178,10 +182,10 @@ export default class NewClass extends cc.Component {
             cc.tween(this.layer).to(0.5, {opacity: 120}).start();
             this.redirect.setPosition(this.camera.position);
             cc.tween(this.redirect).to(0.3, {scale:1}).start();
-            this.download.active = true;
             this.download.setPosition(this.camera.position.x, this.camera.position.y - 200);
         }, 0.3)
         
+        this.node.parent.getComponent("window").gameEnd();
     }
 
 

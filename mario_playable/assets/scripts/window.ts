@@ -24,13 +24,13 @@ export default class NewClass extends cc.Component {
         // calculte device ratio
         let deviceRatio = deviceResolution.width / deviceResolution.height;
     
-        if (deviceRatio >= desiredRatio) {
-            canvas.fitHeight = true;
-            canvas.fitWidth = false;
-        } else if (deviceRatio < desiredRatio) {
-            canvas.fitHeight = false;
-            canvas.fitWidth = true;
-        }
+        // if (deviceRatio >= desiredRatio) {
+        //     canvas.fitHeight = true;
+        //     canvas.fitWidth = false;
+        // } else if (deviceRatio < desiredRatio) {
+        //     canvas.fitHeight = false;
+        //     canvas.fitWidth = true; 
+        // }
     }
     
     gameEnd() {

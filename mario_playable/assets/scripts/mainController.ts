@@ -16,7 +16,7 @@ export default class NewClass extends cc.Component {
     onLoad () {
         let physics_manager = cc.director.getPhysicsManager();
         physics_manager.enabled = true;
-        physics_manager.gravity = cc.v2(0 , -5000);
+        physics_manager.gravity = cc.v2(0 , -4000);
     }
 
     start () {
