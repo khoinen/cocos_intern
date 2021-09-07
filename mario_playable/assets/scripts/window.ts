@@ -7,11 +7,17 @@
 
 const {ccclass, property} = cc._decorator;
 
+enum SOUND {
+    bgMusic,
+}
 @ccclass
 export default class NewClass extends cc.Component {
 
     @property(cc.Node)
     download: cc.Node = null;
+
+    @property(cc.AudioClip)
+    sounds: cc.AudioClip[] = [];
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -41,12 +47,21 @@ export default class NewClass extends cc.Component {
         window.openStore();
     }
 
+    playSound (soundId: number, loop: boolean = false, delay: number = 0) {
+        if (window.playsound){
+            this.scheduleOnce(() => {
+                cc.audioEngine.playEffect(this.sounds[soundId], true);
+            }, delay);
+        }
+    }
+
     onLoad() {
         window.gameReady && window.gameReady();
         if (window.mintegral){
             this.download.active = true;
         }
         this.makeResponsive();
+        this.playSound(SOUND.bgMusic, false, 0);
     }
 
     start () {

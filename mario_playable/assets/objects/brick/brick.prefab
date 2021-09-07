@@ -313,7 +313,11 @@
       "__id__": 1
     },
     "_enabled": true,
-    "sounds": [],
+    "sounds": [
+      {
+        "__uuid__": "1cf0f9d7-3ac1-4959-af31-91cc2321c3d1"
+      }
+    ],
     "_id": ""
   },
   {

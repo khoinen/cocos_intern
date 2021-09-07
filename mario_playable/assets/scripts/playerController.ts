@@ -7,6 +7,11 @@
 
 const {ccclass, property} = cc._decorator;
 
+enum SOUND{
+    win,
+    lose,
+}
+
 @ccclass
 export default class NewClass extends cc.Component {
 
@@ -187,7 +192,6 @@ export default class NewClass extends cc.Component {
         
         this.node.parent.getComponent("window").gameEnd();
     }
-
 
     start () {
 
